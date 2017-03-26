@@ -1,0 +1,33 @@
+name:          lumi-example-hs-pkg
+version:       0.0
+cabal-version: >= 1.10
+build-type:    Simple
+copyright:     Lumi Guide Fietsdetectie Holding B.V.
+maintainer:    Bas van Dijk <v.dijk.bas@gmail.com>
+stability:     experimental
+
+library
+    default-language: Haskell2010
+
+    build-depends:
+        configurator
+      , containers
+      , data-default-class
+      , dimensional
+      , http-types
+      , lumi-hackage-extended
+      , monad-control
+      , servant-server
+      , systemd
+      , transformers-base
+      , unix
+      , wai
+      , wai-extra
+      , warp
+
+    hs-source-dirs: src
+
+    exposed-modules:
+        Lumi.Example
+
+    ghc-options: -Wall
